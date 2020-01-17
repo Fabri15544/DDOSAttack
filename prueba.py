@@ -7,7 +7,7 @@ import random
 #host && Port
 target_host = raw_input("HOST :")
 target_port = input("Port :")
-target_packetes = input("Bytes :")
+packetes = input("Bytes :")
 #packet
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(packetes)
