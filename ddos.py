@@ -16,7 +16,7 @@ while True:
    b = str(random.randint(1,254))
    c = str(random.randint(1,254))
    d = str(random.randint(1,254))
-   dot = “.”
+   dot = str(random.randint(1,254))
    Source_ip = a + dot + b + dot + c + dot + d
    
    for source_port in range(1, 65535)
