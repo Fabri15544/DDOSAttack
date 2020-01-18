@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # coding=utf-8
-Import random
 from scapy.all import *
 import os, sys
 import time
