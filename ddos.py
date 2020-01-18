@@ -24,7 +24,7 @@ while True:
       IP1 = IP(source_IP = source_IP, destination = target_IP)
       TCP1 = TCP(srcport = source_port, dstport = 80)
       pkt = IP1 / TCP1
-      send(pkt,inter = .999)
+      send(pkt,inter = .998)
       
 #packet
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
